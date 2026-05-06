@@ -1,61 +1,77 @@
-# Smart Pothole Detection System
+# 🚧 Smart Pothole System
 
-A lightweight web application for reporting and managing potholes with a simple React frontend and Node.js/Express backend.
+Smart Pothole System is an AI-powered infrastructure monitoring platform that helps users report potholes using image uploads and live location tracking. The platform includes a modern web dashboard, backend management system, and a SwiftUI iOS application for real-time complaint reporting and monitoring.
 
-## Architecture
+---
 
-- **Frontend:** React, Vite, Tailwind CSS V4, React-Router, React-Leaflet
-- **Backend:** Node.js, Express, Multer (local image upload), JWT Authentication
-- **Database:** MySQL
+# ✨ Features
 
-## Prerequisites
+- Pothole reporting with images
+- Live GPS location tracking
+- Interactive maps
+- Admin dashboard
+- Complaint tracking system
+- Worker assignment management
+- SwiftUI iOS application
+- Responsive modern UI
+- MySQL database integration
+- REST API backend
 
-- Node.js (v18+)
-- MySQL Server
+---
 
-## Setup Instructions
+# 🌐 Web Application
 
-### 1. Database Setup
-Create a MySQL database (e.g., `pothole_db`).
-Execute the SQL commands found in `backend/schema.sql` to create the necessary tables.
+The web platform allows users and administrators to:
 
-### 2. Backend Setup
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Configure Environment Variables:
-   Open `backend/.env` and update the `DATABASE_URL` with your MySQL credentials.
-4. Start the server:
-   ```bash
-   npm start
-   ```
-   (Alternatively, use `node server.js` or `nodemon server.js` for development).
+- Submit pothole complaints
+- Monitor complaint status
+- View reports on maps
+- Manage repair progress
+- Access analytics dashboards
 
-### 3. Frontend Setup
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+---
 
-## Usage
+# 📱 iOS Application
 
-1. Open the frontend in your browser (usually `http://localhost:5173`).
-2. **Sign Up** as a new user. You can choose to be a `User` or `Admin`.
-3. **User Dashboard:** Report a pothole by taking a picture, getting your location, and adding a description.
-4. **Admin Dashboard:** Log in with an Admin account to see the analytics map, view all submitted complaints, and update their status (Pending, In Progress, Completed), assign workers, and set estimated completion times.
+The SwiftUI iOS application includes:
 
-## AI Validation (MVP)
-The AI validation is currently simulated using a dummy function in the backend `routes/complaints.js`. It randomly assigns a "Valid Pothole" or "Invalid/Fake" status along with a confidence score to demonstrate the flow. You can replace this logic with an actual API call to a computer vision model in the future.
+- Native SwiftUI interface
+- MVVM architecture
+- MapKit integration
+- Location services
+- Complaint reporting
+- Dashboard statistics
+- Reusable components
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- React.js
+- JavaScript
+- Tailwind CSS
+- Leaflet Maps
+
+## Backend
+- Node.js
+- Express.js
+- MySQL
+
+## iOS
+- SwiftUI
+- MapKit
+- Core Location
+
+---
+
+# 📂 Project Structure
+
+```bash
+SMART-POTHOLE/
+│
+├── frontend/
+├── backend/
+├── ios/
+├── README.md
+└── .gitignore
